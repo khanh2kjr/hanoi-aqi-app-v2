@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "pkief.material-icon-theme",
+    "azemoh.one-monokai",
+    "dsznajder.es7-react-js-snippets",
+    "mgmcdermott.vscode-language-babel",
+    "steoates.autoimport"
+  ]
+}

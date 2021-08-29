@@ -1,0 +1,86 @@
+.icon-marker-user {
+  z-index: 9999;
+  padding: 30px;
+  position: relative;
+  background-color: rgba($color: #0095ff, $alpha: 0.3);
+  border-radius: 50%;
+
+  div {
+    width: 20px;
+    height: 20px;
+    background-color: #00a1ff;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.icon-marker-container {
+  .icon-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 1px solid #2f2f2f;
+    border-radius: 50%;
+    span {
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.marker-circle {
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    opacity: 0.4;
+    top: -22px;
+    left: -21px;
+    z-index: -1;
+    border-radius: 50%;
+    position: absolute;
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 4px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.table-color {
+  position: relative;
+  &:hover &__tooltip{
+      display: block;
+  }
+  &__tooltip {
+      z-index: 1000;
+      position: absolute;
+      top: 15px;
+      left: 160px;
+      border-radius: 5px;
+      padding: 5px;
+      background-color: green;
+      width: 100%;
+      display: none;
+  }
+}
